@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="myStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="myScript.js"></script>
+  <title>PROJECT 4 - VÕ GIA KHÁNH - FX12517</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse my-nav" id="top-page">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">24/7 NEWS</a>
+      </div>
+      <form class="navbar-form navbar-left">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search" readonly>
+          <div class="input-group-btn">
+            <span class="btn btn-default">
+              <i class="glyphicon glyphicon-search"></i>
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="language">Language:</label>
+          <select id="language-top" name="language" class="form-control">
+            <option value="en" selected>English</option>
+            <option value="zh">Chinese</option>
+            <option value="ru">Russian</option>
+            <option value="fr">French</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="topic">Topic:</label>
+          <select id="topic" name="language" class="form-control">
+            <option value="breaking-news" selected>Breaking News</option>
+            <option value="world">World</option>
+            <option value="nation">Nation</option>
+            <option value="business">Businese</option>
+            <option value="technology">Technology</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="sports">Sport</option>
+            <option value="science">Science</option>
+            <option value="health">Health</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+      </div>
+      <div id="contain-news" class="col-sm-8 text-left"> 
+        <ul id="news-list"></ul>
+      </div>
+      <div class="col-sm-2 sidenav">
+      </div>
+    </div>
+  </div>
+  <div class="my-backdrop">
+  </div>
+  <div class="text-center my-modalbox">
+    <div class="my-closebox"><i class="glyphicon glyphicon-remove"></i></div>
+      <form id="search" action="#">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search" id="key-word" autocomplete="off" required>
+      </div>
+      <div class="form-group">
+        <label for="language">Choose Language:</label>
+        <select id="language" name="language" class="form-control">
+          <option value="en" selected>English</option>
+          <option value="zh">Chinese</option>
+          <option value="ru">Russian</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="from">From:</label>
+        <input type="date" class="form-control" id="from" name="from-date">
+      </div>
+      <div class="form-group">
+        <label for="to">To:</label>
+        <input type="date" class="form-control" id="to" name="to-date">
+      </div>
+      <div class="form-group">
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="language" class="form-control">
+          <option value="publishedAt" selected>Date</option>
+          <option value="relevance">Relevance</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>  Search
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="contain-loader">
+    <div class="loader"></div>
+  </div>
+  <footer class="container-fluid text-center">
+    <p><a href="#top-page">BACK TO TOP</a></p>
+  </footer>
+
+</body>
+</html>

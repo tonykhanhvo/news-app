@@ -1,0 +1,141 @@
+#contain-news {
+    min-height: 1000px;
+}
+.my-nav {
+    background-color: rgb(167, 14, 26);
+}
+.my-nav a {
+    color: white !important;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 25px;
+}
+.navbar-inverse {
+    border: none;
+}
+.my-backdrop {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 50;
+    display: none;
+}
+.my-modalbox {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    background-color: white;
+    z-index: 51;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #444444;
+    display: none;
+}
+.my-closebox {
+    float: right;
+    margin: 2px 6px 0px 10px;
+    cursor: pointer;
+}
+img {   
+    max-width: 100%;
+}
+.row {
+    margin-right: 0px !important;
+}
+#news-list div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+hr {
+    margin: 2px;
+}
+.mobile-h3 a {
+    color: black;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+.mobile-h3 a:hover {
+    color:rgb(167, 14, 26) !important;
+    text-decoration: none !important;
+}
+.mobile-h3 a:visited, .mobile-h3 a:focus {
+    text-decoration: none;
+    color:rgb(180, 81, 89)
+}
+.div-source span {
+    color: #777777;
+    font-size: 12px;
+    font-weight: bold;
+}
+.div-source ~ span {
+    color: #4D4D4D;
+}
+footer {
+    background-color:rgb(167, 14, 26);
+    min-height: 50px;
+    line-height: 50px;
+}
+footer a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+nav label {
+    color: white;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.contain-loader {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    display: none;
+    z-index: 100;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media only screen and (min-width: 768px) {
+    .mobile-h3 a {
+        font-size: 2.5vw;
+    }
+    .my-modalbox {
+        top: 20vh;
+        left: 20vw;
+        right: 20vw;    
+    }
+    .contain-loader {
+        top: 50%;
+        left: 47%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .mobile-h3 a {
+        font-size: 22px;
+    }
+    #news-list div {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .my-modalbox {
+        top: 25vh;
+        left: 30vw;
+        right: 30vw;    
+    }
+}
